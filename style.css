@@ -10,7 +10,7 @@ html {
     width: auto;
     box-sizing: border-box;
   }
-body{
+body{ 
     background-image: url('images/background-index.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,7 +20,7 @@ body{
 }
 #main-content {
     color: #fdfdfd;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 50px;
     margin-left: 40px;
     font-size: 50px;
@@ -30,7 +30,7 @@ h1{
     color: #fdfdfd;
     font-size: 50px;
     font-family: 'system-ui', 'sans-serif';
-    margin-top: 200px;
+    margin-top: 5%;
     margin-bottom: 40px;
     padding: 30px;
 }
@@ -82,6 +82,7 @@ nav ul li a:hover::after {
 }
 #main-content {
     background-color: rgba(255, 255, 255, .3);
+    width: 1200px;
     border-radius:100px;
     border-color: #fdfdfd;
     border-style:ridge;
@@ -146,4 +147,51 @@ footer {
     height: 400px;
     align-self: center;
     padding: 20px;
+}
+
+/* -------------------EXPERIENCE CSS-------------------- */
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap ; 
+    height: 100vh;
+}
+
+#card-portfolio {
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px;
+    width: 300px;
+    height: 350px;
+}
+
+#card-portfolio h3, p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-img {
+    height: 170px;
+    margin-bottom: 30px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+#card-portfolio:hover {
+    background-color: #807ae8;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.06);
+    transition: all 1s ease;
+}
+.car-1 {
+    background-image: url('images/img-portfolio.jpg');
+}
+.car-2 {
+    background-image: url('images/img-portfolio-2.jpg');
+}
+.car-3 {
+    background-image: url('images/img-portfolio-3.png');
 }
