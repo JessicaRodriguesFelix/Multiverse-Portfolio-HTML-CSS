@@ -51,7 +51,6 @@ nav ul li {
     list-style: none;
     margin: 20px 40px;
 }
-
 nav ul li a {
     color: #341169;
     font-family: 'Arimo', sans-serif;
@@ -89,8 +88,7 @@ nav ul li a:hover::after {
     border-width: thick;
     display: flex;
     justify-content: center;
-    padding: 40px;
-    
+    padding: 40px; 
 }
 #main-text a {
     background:white;
@@ -136,20 +134,19 @@ footer {
     color: #fdfdff;
     top:27%;
     line-height: 1.7;
-    padding: 60px;
+    padding: 10px;
     text-align:justify;
     border-top: thick double #b523b5;;
     border-bottom: thick double #b523b5;
     /* background: linear-gradient(0.25turn,#56267b, #a1a7e6,#c891ce); */
 }
 #logo-bio {
-    width: 400px;
+    min-width: 400px;
     height: 400px;
     align-self: center;
     padding: 20px;
 }
-
-/* -------------------EXPERIENCE CSS-------------------- */
+/* -------------------Portfolio CSS-------------------- */
 
 .portfolio-container {
     display: flex;
@@ -194,4 +191,64 @@ footer {
 }
 .car-3 {
     background-image: url('images/img-portfolio-3.png');
+}
+/* -------------------Experience CSS-------------------- */
+
+.timeline {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    grid-template-columns: 1fr 3px 1fr;
+    display: grid;
+    position: absolute;
+    top: 20%;
+    left:25%
+}
+.timeline_component {
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+}
+.timeline_component-bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, .2);
+    /* box-shadow: 0 0 1550px rgba(255, 255, 255, 0.2); */
+    border-radius: 10px;
+}
+/* .timeline_date {
+    padding-top: 45px;
+} */
+.timeline_date--right {
+    text-align: right;
+}
+.timeline_middle {
+    background: white;
+    position: relative;
+}
+.timeline_point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background:#ffff;;
+    border-radius: 50%;
+}
+.timeline_point-bottom {
+    top: initial;
+    bottom: 0;
+}
+p.timeline_paragraph {
+    padding-top: 10px;
+    font-size: 15px;
+    line-height:20px;
+}
+.timeline_title {
+    margin: 0;
+    font-size: 20px;
+}
+.timeline-bottom {
+    margin-bottom: 0;
 }
