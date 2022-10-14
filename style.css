@@ -91,7 +91,6 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: center;
     padding: 40px; 
-    
 }
 #main-text a {
     background:rgb(255, 254, 254);
